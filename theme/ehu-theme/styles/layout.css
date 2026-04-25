@@ -1,0 +1,209 @@
+@font-face {
+  font-family: 'EHUSans';
+  src: url('../public/fonts/EHUSans.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'EHUSans';
+  src: url('../public/fonts/EHUSans-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'EHUSans';
+  src: url('../public/fonts/EHUSans-Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+:root {
+  --slidev-theme-primary: #00D88C;
+  --slidev-theme-secondary: #131313;
+  --slidev-theme-background: #ffffff;
+  --slidev-theme-text: #333333;
+}
+
+html {
+  font-family: "EHUSans", "Open Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--slidev-theme-text);
+  background-color: var(--slidev-theme-background);
+}
+
+.slidev-layout {
+  @apply h-full w-full bg-white relative p-10;
+}
+
+/* Global layout for all standard slides (default, intro, two-cols, etc.) */
+/* Excluimos las portadas, secciones y diseños a pantalla completa */
+.slidev-page > .slidev-layout:not(.cover):not(.section):not(.end):not(.full):not(.image):not(.iframe):not(.none) {
+  padding-left: 180px; /* 140px (columna) + 40px (margen interno) */
+}
+
+/* Green vertical column on the left edge, matching logo width */
+.slidev-page > .slidev-layout:not(.cover):not(.section):not(.end):not(.full):not(.image):not(.iframe):not(.none)::before {
+  content: '';
+  position: absolute;
+  top: 140px; 
+  left: 0;
+  bottom: 0;
+  width: 140px; 
+  background-color: var(--slidev-theme-primary);
+  z-index: 10;
+}
+
+/* Small logo at the top left, with its own white background matching the column width */
+.slidev-page > .slidev-layout:not(.cover):not(.section):not(.end):not(.full):not(.image):not(.iframe):not(.none)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px; 
+  height: 140px; 
+  background-color: white;
+  background-image: url('../public/logo.svg');
+  background-size: 100px auto; 
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 10;
+}
+
+/* Typography */
+.slidev-layout h1 {
+  @apply text-6xl font-bold leading-tight mb-8 inline-block border-b-[8px] border-[#00D88C] pb-2;
+  color: var(--slidev-theme-secondary);
+}
+
+.slidev-layout h2 {
+  @apply text-5xl font-semibold italic border-none;
+  color: var(--slidev-theme-secondary);
+}
+
+.slidev-layout h3 {
+  @apply text-3xl font-bold;
+  color: #006B3D;
+}
+
+.slidev-layout p, .slidev-layout li {
+  @apply text-2xl leading-snug;
+}
+
+.slidev-layout a {
+  color: var(--slidev-theme-primary);
+  text-decoration: none;
+}
+
+.slidev-layout a:hover {
+  text-decoration: underline;
+}
+
+/* Background images and layers */
+.ehu-bg-cranes {
+  background-image: url('../public/bg-cranes.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ehu-bg-1 {
+  background-image: url('../public/bg1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Standard Logo placement */
+.logo-top-right {
+  @apply absolute top-6 right-10;
+  width: 150px;
+}
+
+.logo-bottom-right {
+  @apply absolute bottom-6 right-10;
+  width: 150px;
+}
+
+.logo-cover {
+  @apply absolute top-10 left-10;
+  width: 200px;
+}
+
+/* ========================================
+   GitHub-style Markdown Alerts / Admonitions
+   Usage: > [!NOTE], > [!TIP], > [!IMPORTANT], > [!WARNING], > [!CAUTION]
+   ======================================== */
+
+.alert {
+  border-left: 5px solid;
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.alert-header {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.alert-body p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* NOTE — azul */
+.alert-note {
+  border-color: #3b82f6;
+  background-color: rgba(59, 130, 246, 0.08);
+  color: #1e3a5f;
+}
+.alert-note .alert-header {
+  color: #2563eb;
+}
+
+/* TIP — verde corporativo EHU */
+.alert-tip {
+  border-color: #00D88C;
+  background-color: rgba(0, 216, 140, 0.08);
+  color: #064e3b;
+}
+.alert-tip .alert-header {
+  color: #006B3D;
+}
+
+/* IMPORTANT — morado */
+.alert-important {
+  border-color: #8b5cf6;
+  background-color: rgba(139, 92, 246, 0.08);
+  color: #3b0764;
+}
+.alert-important .alert-header {
+  color: #7c3aed;
+}
+
+/* WARNING — naranja */
+.alert-warning {
+  border-color: #f59e0b;
+  background-color: rgba(245, 158, 11, 0.08);
+  color: #78350f;
+}
+.alert-warning .alert-header {
+  color: #d97706;
+}
+
+/* CAUTION — rojo */
+.alert-caution {
+  border-color: #ef4444;
+  background-color: rgba(239, 68, 68, 0.08);
+  color: #7f1d1d;
+}
+.alert-caution .alert-header {
+  color: #dc2626;
+}
