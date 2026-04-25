@@ -26,10 +26,17 @@
   --slidev-theme-text: #333333;
 }
 
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
 html {
   font-family: "EHUSans", "Open Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   color: var(--slidev-theme-text);
   background-color: var(--slidev-theme-background);
+  scroll-behavior: smooth;
 }
 
 .slidev-layout {
@@ -68,6 +75,7 @@ html {
   background-repeat: no-repeat;
   background-position: center center;
   z-index: 10;
+  animation: float 6s ease-in-out infinite;
 }
 
 /* Typography */

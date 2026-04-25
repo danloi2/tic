@@ -1,52 +1,59 @@
-# ehu-theme
+# EHU Slidev Theme
 
-[![NPM version](https://img.shields.io/npm/v/ehu-theme?color=3AB9D4&label=)](https://www.npmjs.com/package/ehu-theme)
+[![Slidev](https://img.shields.io/badge/Powered%20by-Slidev-00D88C?logo=visualstudiocode)](https://sli.dev/)
 
-A (...) theme for [Slidev](https://github.com/slidevjs/slidev).
+A custom corporate theme for the **University of the Basque Country (UPV/EHU)**, designed for academic presentations.
 
-<!--
-  Learn more about how to write a theme:
-  https://sli.dev/guide/write-theme.html
---->
+## Features
 
-<!--
-  run `npm run dev` to check out the slides for more details of how to start writing a theme
--->
+- **Corporate Branding**: Uses EHU green (`#00D88C`) and EHUSans typography.
+- **Fixed Branding**: Logo block always visible on the top-left (configurable per layout).
+- **Auto-scaling Alerts**: Special `alert` layout that automatically adjusts font size to fit your content.
+- **Academic Focus**: Optimized for structured course material (decilogues, matrices, etc.).
 
-<!--
-  Put some screenshots here to demonstrate your theme
+## Installation
 
-  Live demo: [...]
--->
-
-## Install
-
-Add the following frontmatter to your `slides.md`. Start Slidev then it will prompt you to install the theme automatically.
+Add the theme to your `slides.md` frontmatter:
 
 ```yaml
 ---
-theme: ehu-theme
+theme: ./theme/ehu-theme
 ---
 ```
 
-Learn more about [how to use a theme](https://sli.dev/guide/theme-addon#use-theme).
-
 ## Layouts
 
-This theme provides the following layouts:
+| Layout | Purpose |
+|---|---|
+| `cover` | Main title slide with corporate squares. |
+| `intro` | Presenter profile / Introduction. |
+| `index` | Grid-based table of contents (auto-columns). |
+| `section` | Colored divider for main topics. |
+| `alert` | High-impact admonition with auto-scaling font. |
+| `statement` | Centralized text box for key messages. |
+| `quote` | Stylized blockquotes. |
+| `fact` | Large numbers or key statistical data. |
+| `end` | "Thank you" closing slide. |
 
-> TODO:
+### Alert Layout Usage
 
-## Components
+The `alert` layout supports five types of visual admonitions:
 
-This theme provides the following components:
-
-> TODO:
+```yaml
+---
+layout: alert
+alertType: tip # note, tip, important, warning, caution
+alertTitle: Custom Title
+---
+Your content here...
+```
 
 ## Contributing
 
-- `npm install`
-- `npm run dev` to start theme preview of `example.md`
-- Edit the `example.md` and style to see the changes
-- `npm run export` to generate the preview PDF
-- `npm run screenshot` to generate the preview PNG
+1. `npm install`
+2. `npm run dev` to start the preview using `example.md`.
+3. Edit files in `layouts/` or `styles/` to see changes.
+
+## License
+
+MIT License

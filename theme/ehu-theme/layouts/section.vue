@@ -1,5 +1,5 @@
 <template>
-  <div class="slidev-layout section bg-[#00D88C] relative flex justify-center items-center">
+  <div class="slidev-layout section bg-gradient-to-br from-[#00D88C] to-[#00b072] relative flex justify-center items-center">
     <div class="absolute top-0 left-0 w-[140px] h-[140px] bg-white z-20" :style="{ backgroundImage: `url(${logoUrl})`, backgroundSize: '100px auto', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center' }"></div>
     
     <div class="z-10 relative bg-white w-3/4 p-12 flex flex-col justify-center items-center text-center shadow-2xl mt-16">

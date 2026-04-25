@@ -47,11 +47,13 @@ layout: index
 </v-clicks>
 
 ---
-layout: section
+layout: image-full
+image: ./theme/ehu-theme/public/bg-cranes.png
 ---
 
 # I. Sentido y Propósito
-¿De qué trata esta asignatura y por qué es importante?
+
+**¿De qué trata esta asignatura y por qué es importante?**
 
 ---
 

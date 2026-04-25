@@ -2,6 +2,14 @@
 
 > Course presentations for *Las Tecnologías de la Información y la Comunicación en Educación Primaria* — UPV/EHU (HEFA), 2026/2027.
 
+![Slidev](https://img.shields.io/badge/Slidev-00D88C?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+
 A [Slidev](https://sli.dev/)-based presentation repository featuring a custom institutional theme for the University of the Basque Country (UPV/EHU), built for the course **TIC en Educación Primaria** (2nd year, Primary Education Degree).
 
 ---
