@@ -14,7 +14,7 @@ wakeLock: true
 export:
   format: pdf
   withClicks: false
-  download: true
+download: false
 ---
 
 # TIC en Educación Primaria
