@@ -1,10 +1,10 @@
 ---
 theme: ./theme/ehu-theme
-title: Guía del Alumnado — TIC en Educación Primaria 2026/2027
+title: Guía del Alumnado
 author: Daniel Losada
 keywords: ["TIC", "Educación Primaria", "UPV/EHU", "Sociedad Algorítmica", "Guía del Alumnado"]
 layout: cover
-titleTemplate: '%s - Slidev'
+titleTemplate: '%s - TIC en Educación Primaria (2026/2027)'
 presenter: true
 drawings:
   enabled: true
@@ -14,7 +14,7 @@ wakeLock: true
 export:
   format: pdf
   withClicks: false
-download: false
+  download: true
 ---
 
 # TIC en Educación Primaria
