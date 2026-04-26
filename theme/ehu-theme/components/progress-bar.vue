@@ -38,8 +38,18 @@ const getSlideTitle = (index: number) => {
         :to="`/${i}`"
         class="flex-1 h-full relative group cursor-pointer"
       >
-        <!-- Cuadradito que aparece al pasar el ratón -->
-        <div class="absolute top-[2px] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[8px] h-[8px] bg-[#00D88C] border border-white rounded-[2px] opacity-0 group-hover:opacity-100 transition-opacity shadow-sm z-40" />
+        <!-- Marcador visual constante para cada diapositiva (puntos negros/blancos) -->
+        <div 
+          class="absolute top-[2px] left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-300 z-30"
+          :class="[
+            i === currentPage ? 'w-[8px] h-[8px] bg-[#131313] rounded-full ring-2 ring-white shadow-md' : 
+            i < currentPage ? 'w-[4px] h-[4px] bg-[#131313] rounded-full opacity-60' : 
+            'w-[4px] h-[4px] bg-[#131313]/20 rounded-full'
+          ]"
+        />
+
+        <!-- Cuadradito de hover (el que ya existía, pero mejorado) -->
+        <div class="absolute top-[2px] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[10px] h-[10px] bg-[#00D88C] border-2 border-white rounded-[2px] opacity-0 group-hover:opacity-100 transition-all scale-75 group-hover:scale-100 shadow-md z-40" />
 
         <!-- Tooltip con el título de la diapositiva -->
         <div class="absolute top-full left-1/2 -translate-x-1/2 mt-1 px-3 py-1.5 bg-[#131313] text-white text-[12px] font-bold whitespace-nowrap rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-50">

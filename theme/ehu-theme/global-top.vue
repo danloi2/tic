@@ -1,3 +1,3 @@
 <template>
-  <!-- <progress-bar /> -->
+  <progress-bar />
 </template>

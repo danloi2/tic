@@ -316,3 +316,29 @@ html {
 .alert-caution .alert-header {
   color: #dc2626;
 }
+
+/* ========================================
+   Custom Presenter View Layout
+   ======================================== */
+.presenter-grid {
+  grid-template-areas: "current next" "notes notes" !important;
+  grid-template-rows: 1fr 1fr !important;
+  grid-template-columns: 1fr 1fr !important;
+}
+
+.presenter-current {
+  grid-area: current !important;
+}
+
+.presenter-next {
+  grid-area: next !important;
+}
+
+.presenter-notes {
+  grid-area: notes !important;
+}
+
+/* Ocultamos el resizer vertical que ya no tiene sentido en este layout */
+.notes-vertical-resizer {
+  display: none !important;
+}

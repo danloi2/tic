@@ -15,6 +15,8 @@ export:
   format: pdf
   withClicks: false
 download: true
+aspectRatio: 16/9
+canvasWidth: 1100
 ---
 
 # TIC en Educación Primaria (UPV/EHU)
