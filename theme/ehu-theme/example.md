@@ -36,7 +36,7 @@ layout: index
 7. **Quote**: Stylized quotes
 8. **Two-Cols**: Balanced content
 9. **Fact**: Big data
-10. **End**: Thank you slide
+10. **End**: Thank you slide 
 
 ---
 layout: alert
