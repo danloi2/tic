@@ -12,20 +12,28 @@
 import logoUrl from '../public/logo.svg'
 </script>
 
-<style>
+<style lang="postcss">
 .slidev-layout.section h1, .slidev-layout.section h2 {
-  @apply text-[#131313];
+  color: #131313;
 }
 
 .slidev-layout.section h1 {
-  @apply text-7xl font-bold mb-2 inline-block border-b-[12px] border-[#00D88C] pb-2;
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  border-bottom: 12px solid #00D88C;
+  padding-bottom: 0.5rem;
 }
 
 .slidev-layout.section h2 {
-  @apply text-4xl mb-6;
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .slidev-layout.section p {
-  @apply text-3xl leading-snug text-[#131313];
+  font-size: 1.875rem;
+  line-height: 1.625;
+  color: #131313;
 }
 </style>

@@ -40,7 +40,11 @@ html {
 }
 
 .slidev-layout {
-  @apply h-full w-full bg-white relative p-10;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  padding: 2.5rem;
 }
 
 /* Global layout for all standard slides (default, intro, two-cols, etc.) */
@@ -80,22 +84,44 @@ html {
 
 /* Typography */
 .slidev-layout h1 {
-  @apply text-6xl font-bold leading-tight mb-8 inline-block border-b-[8px] border-[#00D88C] pb-2;
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 2rem;
+  display: inline-block;
+  border-bottom: 8px solid #00D88C;
+  padding-bottom: 0.5rem;
   color: var(--slidev-theme-secondary);
 }
 
 .slidev-layout h2 {
-  @apply text-5xl font-semibold italic border-none;
+  font-size: 3rem;
+  font-weight: 600;
+  font-style: italic;
+  border: none;
   color: var(--slidev-theme-secondary);
 }
 
 .slidev-layout h3 {
-  @apply text-3xl font-bold;
+  font-size: 1.875rem;
+  font-weight: 700;
   color: #006B3D;
 }
 
-.slidev-layout p, .slidev-layout li {
-  @apply text-2xl leading-snug;
+.slidev-layout:not(.alert-layout) p, 
+.slidev-layout:not(.alert-layout) li {
+  font-size: 1.5rem;
+  line-height: 1.625;
+}
+
+.slidev-layout blockquote {
+  border-left: 6px solid #00D88C;
+  padding-left: 1.5rem;
+  font-style: italic;
+  margin: 1.5rem 0;
+  opacity: 0.9;
+  font-size: 1.1em;
+  line-height: 1.5;
 }
 
 .slidev-layout a {
@@ -105,6 +131,50 @@ html {
 
 .slidev-layout a:hover {
   text-decoration: underline;
+}
+
+/* Premium Table Styles */
+.slidev-layout table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  font-size: 1.1rem;
+}
+
+.slidev-layout th {
+  background-color: #00D88C;
+  color: white;
+  font-weight: 700;
+  text-align: left;
+  padding: 1rem;
+  border-bottom: 4px solid #006B3D;
+}
+
+.slidev-layout td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  color: #333;
+}
+
+.slidev-layout tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.slidev-layout tr:nth-child(even) {
+  background-color: rgba(0, 216, 140, 0.05); /* Verde muy clarito corporativo */
+}
+
+.slidev-layout tr:last-child td {
+  border-bottom: none;
+}
+
+.slidev-layout tr:hover {
+  background-color: rgba(0, 216, 140, 0.1);
+  transition: background-color 200ms ease;
 }
 
 /* Background images and layers */
@@ -124,17 +194,23 @@ html {
 
 /* Standard Logo placement */
 .logo-top-right {
-  @apply absolute top-6 right-10;
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
   width: 150px;
 }
 
 .logo-bottom-right {
-  @apply absolute bottom-6 right-10;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2.5rem;
   width: 150px;
 }
 
 .logo-cover {
-  @apply absolute top-10 left-10;
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
   width: 200px;
 }
 

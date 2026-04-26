@@ -12,10 +12,10 @@
 </template>
 
 <script setup>
-import logoUrl from '../public/logo.svg'
+const logoUrl = '/logo.svg'
 </script>
 
-<style>
+<style lang="postcss">
 /* Estilos específicos para el título dentro del índice para que no ocupe tanto espacio */
 .slidev-layout.index h1 {
   @apply text-4xl mb-4 border-b-4 pb-1 !important;

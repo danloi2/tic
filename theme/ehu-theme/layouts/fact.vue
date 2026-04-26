@@ -8,7 +8,7 @@
 
 <style>
 .slidev-layout.fact h1 {
-  @apply text-8xl font-bold text-[#131313] mb-2;
+  @apply text-4xl font-bold text-[#131313] mb-2;
 }
 .slidev-layout.fact p {
   @apply text-2xl text-[#131313] font-medium max-w-sm;

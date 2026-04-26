@@ -18,21 +18,35 @@
 import logoUrl from '../public/logo.svg'
 </script>
 
-<style>
+<style lang="postcss">
 .slidev-layout.end h1 {
-  @apply text-5xl font-bold mb-4 border-b-6 border-[#00D88C] pb-1 inline-block !important;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  border-bottom: 6px solid #00D88C;
+  padding-bottom: 0.25rem;
+  display: inline-block !important;
   color: #131313 !important;
 }
 
 .slidev-layout.end h2 {
-  @apply text-3xl font-semibold italic text-gray-600 mb-2 mt-0 !important;
+  font-size: 1.875rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+  margin-top: 0 !important;
 }
 
 .slidev-layout.end h3 {
-  @apply text-2xl font-bold text-[#006B3D] !important;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #006B3D !important;
 }
 
 .slidev-layout.end p {
-  @apply text-xl text-[#131313] leading-snug;
+  font-size: 1.25rem;
+  color: #131313;
+  line-height: 1.5;
 }
 </style>

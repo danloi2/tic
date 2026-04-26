@@ -23,10 +23,11 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { computed } from 'vue'
 import { handleBackground } from '../layoutHelper'
-import logoUrl from '../public/logo.svg'
+
+const logoUrl = '/logo.svg'
 
 const props = defineProps({
   image: {
@@ -41,7 +42,7 @@ const props = defineProps({
 const style = computed(() => handleBackground(props.image, false, props.backgroundSize))
 </script>
 
-<style scoped>
+<style scoped lang="postcss">
 .animate-fade-in-up {
   animation: fadeInUp 0.8s ease-out;
 }
@@ -69,3 +70,4 @@ const style = computed(() => handleBackground(props.image, false, props.backgrou
   @apply text-[#00D88C] font-bold;
 }
 </style>
+

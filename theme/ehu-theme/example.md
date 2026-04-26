@@ -6,6 +6,7 @@ layout: cover
 ---
 
 # EHU Theme Showcase
+
 ## Professional Slidev Theme for UPV/EHU
 
 Custom branding for academic excellence.
@@ -14,8 +15,9 @@ Custom branding for academic excellence.
 layout: intro
 ---
 
-# Welcome
-## I am the EHU Theme
+## Welcome
+
+### I am the EHU Theme
 
 I provide corporate layouts and custom components designed for the University of the Basque Country.
 
@@ -23,7 +25,7 @@ I provide corporate layouts and custom components designed for the University of
 layout: index
 ---
 
-# Theme Layouts
+## Theme Layouts
 
 1. **Cover**: Institutional landing
 2. **Intro**: Profile & Intro
@@ -42,9 +44,9 @@ alertType: tip
 alertTitle: Powerful Feature
 ---
 
-The `alert` layout is reactive! 
+The `alert` layout is reactive!
 
-If you write a lot of text here, the font size will automatically shrink to ensure everything stays inside the box. 
+If you write a lot of text here, the font size will automatically shrink to ensure everything stays inside the box.
 
 **Give it a try with your Decalogue!**
 
@@ -52,17 +54,18 @@ If you write a lot of text here, the font size will automatically shrink to ensu
 layout: section
 ---
 
-# High Impact Layouts
+## High Impact Layouts
 
 ---
 layout: statement
 ---
 
-# 🚀 "Technology without Pedagogy is blind."
+## 🚀 "Technology without Pedagogy is blind."
 
 ---
 layout: end
 ---
 
-# Thanks for watching
-## Build your slides today!
+## Thanks for watching
+
+### Build your slides today!

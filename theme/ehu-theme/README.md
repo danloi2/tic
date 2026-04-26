@@ -24,7 +24,7 @@ theme: ./theme/ehu-theme
 ## Layouts
 
 | Layout | Purpose |
-|---|---|
+| :--- | :--- |
 | `cover` | Main title slide with corporate squares. |
 | `intro` | Presenter profile / Introduction. |
 | `index` | Grid-based table of contents (auto-columns). |

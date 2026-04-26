@@ -28,20 +28,33 @@
 import logoUrl from '../public/logo.svg'
 </script>
 
-<style>
+<style lang="postcss">
 .slidev-layout.cover {
-  @apply flex flex-col justify-center text-left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
 }
 
 .slidev-layout.cover h1 {
-  @apply text-6xl font-bold text-[#131313] mb-4;
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: #131313;
+  margin-bottom: 1rem;
 }
 
 .slidev-layout.cover h2 {
-  @apply text-3xl font-medium text-[#131313] opacity-80 mt-2;
+  font-size: 1.875rem;
+  font-weight: 500;
+  color: #131313;
+  opacity: 0.8;
+  margin-top: 0.5rem;
 }
 
 .slidev-layout.cover p {
-  @apply text-xl text-[#131313] font-medium opacity-90;
+  font-size: 1.25rem;
+  color: #131313;
+  font-weight: 500;
+  opacity: 0.9;
 }
 </style>
