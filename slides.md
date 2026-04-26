@@ -138,7 +138,7 @@ layout: section
 
 # II. Tus Metas
 
-Competencias y Resultados de Aprendizaje
+Competencias y Resultados de Aprendizaje 
 
 ---
 
