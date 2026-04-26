@@ -17,11 +17,13 @@ export:
 download: true
 ---
 
-# TIC en Educación Primaria
+# TIC en Educación Primaria (UPV/EHU)
 
-## Guía del Alumnado 2026 / 2027
+## Guía del Alumnado 
 
-UPV/EHU — Facultad de Educación, Filosofía y Antropología (HEFA)
+### Daniel Losada
+
+**2026 / 2027**
 
 <!-- Esta presentación es un Decálogo Estratégico para navegar con éxito la asignatura -->
 

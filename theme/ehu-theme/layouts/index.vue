@@ -3,7 +3,7 @@
     <!-- Logo en bloque blanco arriba a la izquierda (consistente con el resto) -->
     <div class="absolute top-0 left-0 w-[140px] h-[140px] bg-white z-20" :style="{ backgroundImage: `url(${logoUrl})`, backgroundSize: '100px auto', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center' }"></div>
 
-    <div class="z-10 relative bg-white min-w-[90%] max-w-[98%] h-auto min-h-[70%] max-h-[92%] pt-8 pb-8 px-16 shadow-2xl flex flex-col items-start border-l-[16px] border-[#131313] transition-all duration-300 mt-16">
+    <div class="z-10 relative bg-white min-w-[90%] max-w-[98%] h-auto min-h-[70%] max-h-[92%] pt-8 pb-8 px-16 shadow-2xl flex flex-col items-start border-l-[16px] border-[#131313] mt-16">
       <div class="w-full flex-1">
         <slot />
       </div>
@@ -12,7 +12,7 @@
 </template>
 
 <script setup>
-const logoUrl = '/logo.svg'
+import logoUrl from '../public/logo.svg'
 </script>
 
 <style lang="postcss">
