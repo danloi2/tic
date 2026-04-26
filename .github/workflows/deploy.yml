@@ -29,8 +29,11 @@ jobs:
       - name: Install dependencies
         run: nci
 
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps chromium
+
       - name: Build
-        run: nr build --base /${{github.event.repository.name}}/
+        run: nr build --base /${{github.event.repository.name}}/ --download
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
