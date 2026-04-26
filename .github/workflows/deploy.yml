@@ -32,8 +32,19 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps chromium
 
-      - name: Build
+      - name: Build (includes PDF download)
         run: nr build --base /${{github.event.repository.name}}/ --download
+
+      - name: Export PPTX
+        run: npx slidev export --format pptx
+
+      - name: Export PNGs
+        run: npx slidev export --format png
+
+      - name: Move exports to dist
+        run: |
+          mv slides-export.pptx dist/slides.pptx
+          mv slides-export dist/imagenes
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
