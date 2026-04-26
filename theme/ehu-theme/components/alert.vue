@@ -188,8 +188,20 @@ onUnmounted(() => {
   font-size: 1.05em;
 }
 
-.ehu-alert-body :deep(strong) {
-  font-weight: 700;
+.ehu-alert-body :deep(strong),
+.ehu-alert-body :deep(b) {
+  font-weight: bold;
+}
+
+.ehu-alert-body :deep(em),
+.ehu-alert-body :deep(i) {
+  font-style: italic;
+}
+
+.ehu-alert-body :deep(a) {
+  text-decoration: underline;
+  color: inherit;
+  font-weight: 500;
 }
 
 .ehu-alert-body :deep(code) {

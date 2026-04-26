@@ -19,6 +19,7 @@ defineProps({
   font-size: 1.15rem;
   margin-bottom: 1.5rem;
   width: 100%;
+  line-height: 1.1;
 }
 
 .ehu-table-container.has-shadow :deep(table) {
@@ -48,13 +49,13 @@ defineProps({
   color: white;
   font-weight: 700;
   text-align: left;
-  padding: 1rem;
+  padding: 0.5rem;
   border-bottom: 4px solid #006B3D;
   font-size: 1.1rem;
 }
 
 .ehu-table-container :deep(td) {
-  padding: 1rem;
+  padding: 0.5rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 </style>

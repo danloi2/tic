@@ -19,11 +19,34 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'EHUSerif';
+  src: url('../public/fonts/EHUSerif.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'EHUSerif';
+  src: url('../public/fonts/EHUSerif-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'EHUSerif';
+  src: url('../public/fonts/EHUSerif-Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
 :root {
   --slidev-theme-primary: #00D88C;
   --slidev-theme-secondary: #131313;
   --slidev-theme-background: #ffffff;
   --slidev-theme-text: #333333;
+  --slidev-theme-font-sans: 'EHUSans', "Open Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --slidev-theme-font-serif: 'EHUSerif', Georgia, "Times New Roman", serif;
 }
 
 @keyframes float {
@@ -33,10 +56,14 @@
 }
 
 html {
-  font-family: "EHUSans", "Open Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--slidev-theme-font-sans);
   color: var(--slidev-theme-text);
   background-color: var(--slidev-theme-background);
   scroll-behavior: smooth;
+}
+
+.font-serif {
+  font-family: var(--slidev-theme-font-serif);
 }
 
 .slidev-layout {

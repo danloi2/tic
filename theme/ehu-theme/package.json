@@ -16,22 +16,27 @@
     "screenshot": "slidev export example.md --format png"
   },
   "dependencies": {
-    "@slidev/types": "^52.14.2"
+    "@slidev/types": "^52.14.2",
+    "slidev-component-progress": "^1.1.0"
   },
   "devDependencies": {
     "@slidev/cli": "^52.14.2"
   },
   "//": "Learn more: https://sli.dev/guide/write-theme.html",
   "slidev": {
+    "addons": [
+      "slidev-component-progress"
+    ],
     "colorSchema": "both",
     "defaults": {
       "transition": "fade",
       "fonts": {
         "sans": "EHUSans, sans-serif",
+        "serif": "EHUSerif, serif",
         "mono": "Fira Code",
         "local": [
           "EHUSans",
-          "EHUSans, sans-serif"
+          "EHUSerif"
         ]
       }
     }

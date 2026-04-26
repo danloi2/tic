@@ -2,7 +2,19 @@
 theme: ./theme/ehu-theme
 title: Guía del Alumnado — TIC en Educación Primaria 2026/2027
 author: Daniel Losada
+keywords: ["TIC", "Educación Primaria", "UPV/EHU", "Sociedad Algorítmica", "Guía del Alumnado"]
 layout: cover
+titleTemplate: '%s - Slidev'
+presenter: true
+drawings:
+  enabled: true
+record: dev
+contextMenu: true
+wakeLock: true
+export:
+  format: pdf
+  withClicks: false
+download: false
 ---
 
 # TIC en Educación Primaria
@@ -503,6 +515,7 @@ La competencia digital no se construye en el aula; se construye en la práctica 
 ---
 
 <alert type="tip" title="(2) Planifica con «Colchón»">
+
 Los imprevistos técnicos existen. **No entregues en el último minuto.**
 
 - Un archivo que no sube
@@ -527,6 +540,7 @@ Quien ignora el feedback intermedio renuncia voluntariamente a la oportunidad de
 ---
 
 <alert type="tip" title="(4) Liderazgo Distribuido">
+
 En tu grupo, **no busques un jefe**; busca que cada persona aporte su mejor habilidad.
 
 - 💻 Habilidad técnica
@@ -718,13 +732,21 @@ El feedback intermedio es un regalo pedagógico. Ignorarlo es renunciar a subir 
 Un docente que no escucha el feedback de sus alumnos y colegas está condenado a repetir los mismos errores. Empieza a practicar ahora.
 </alert>
 
+
 ---
-layout: quote
+layout: default
 ---
 
-«No hablo del espacio que está fuera de la forma, que rodea al volumen y en el cual viven las formas, sino que hablo del espacio que las formas crean, que vive en ellas.»
 
-— Eduardo Chillida
+#
+
+<quote>
+
+«No es tecnología, es pedagogía»
+
+— Allan Carrington
+
+</quote>
 
 ---
 layout: fact
