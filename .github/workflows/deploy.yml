@@ -35,23 +35,6 @@ jobs:
       - name: Build (includes PDF download)
         run: nr build --base /${{github.event.repository.name}}/ --download
 
-      - name: Export PDF
-        run: npx slidev export --format pdf
-
-      - name: Export PPTX
-        run: npx slidev export --format pptx
-
-      - name: Export PNGs
-        run: |
-          npx slidev export --format png
-          zip -r slides-export.zip slides-export/
-
-      - name: Move exports to dist
-        run: |
-          mv slides-export.pdf dist/slides.pdf
-          mv slides-export.pptx dist/slides.pptx
-          mv slides-export.zip dist/imagenes.zip
-
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
